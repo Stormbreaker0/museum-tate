@@ -1,0 +1,35 @@
+                                # # # # # # # # # # # # #
+                                #    DOCUMENTAZIONE     #
+                                # # # # # # # # # # # # #
+     
+1- TAGS HTML
+    A) Tag <main>
+        Il tag <main> in HTML viene utilizzato per definire il contenuto principale di una pagina HTML. In genere viene utilizzato per incapsulare
+        il contenuto principale di una pagina web, come ad esempio il contenuto principale dell'articolo, le sezioni principali della pagina o qualsiasi
+        altro contenuto considerato principale e significativo della pagina che è considerato il contenuto principale e significativo della pagina.
+
+    B) <style> body { max-width: 1200px; } </style>
+        definisce la larghezza della pagina e gli altri sono stili aggiuntivi ciascun descrive uno stile o un effetto su gli elementi di ogni pagina 
+        ESEMPIO: .navbar { background-color: #333; padding: 20px 0; text-align: center;} è lo stile degli tag che usano la classe "navbar"
+
+        --> Il padding è una proprietà CSS che definisce lo spazio interno di un elemento HTML, ovvero lo spazio tra il contenuto dell'elemento e il suo bordo. 
+        In altre parole, è il margine interno che separa il contenuto dell'elemento dal suo bordo.
+
+    C) <meta charset="UTF-8"> :
+        Questo tag indica al browser che il documento HTML utilizza la codifica dei caratteri UTF-8, che è uno standard ampiamente utilizzato
+        per rappresentare il testo in molte lingue utilizzando i caratteri Unicode.UTF-8 è in grado di rappresentare la maggior parte dei caratteri
+        scritti nel mondo, rendendolo una scelta comune per i siti web multilingue. Quando il browser incontra questo tag, sa come interpretare
+        correttamente i caratteri speciali e i caratteri non ASCII nel documento HTML.
+
+
+
+2- DB
+    When the MySQL server is running with the --secure-file-priv option, it restricts the file operations (like LOAD DATA INFILE) to a specific directory.
+    You need to place your CSV files in the directory specified by this option. Here’s how to determine the secure-file-priv directory and load the data accordingly:
+    1. Check the secure-file-priv Directory: SHOW VARIABLES LIKE 'secure_file_priv';
+    2. Adjust File Paths: Once you know the directory, place your artist_data_cleaned.csv and artwork_data_cleaned.csv files in that directory.
+
+
+3 PHP
+    - php -S localhost:8000 nella cartella di lavoro
+    - accedere al localhost:8000 oppure localhost:8000/index.html sul browser

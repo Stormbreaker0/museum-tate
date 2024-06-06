@@ -1,0 +1,72 @@
+                                # # # # # # # # # # # # #
+                                #    LINEA DA SEGUIRE   #
+                                # # # # # # # # # # # # #
+
+1. Preparazione dell'ambiente di sviluppo
+
+    Installazione del software necessario:
+        MySQL: database server.
+        PHP: linguaggio di scripting lato server.
+        Apache o Nginx: server web.
+        Python e Pandas: per la pulizia dei dati.
+
+2. Pulizia dei dati con Python e Pandas
+
+Scarica e decomprimi il file project_data_museo.zip. Utilizza Python e Pandas per pulire i dati.
+
+python
+
+import pandas as pd
+
+# Caricamento dei dati
+artists = pd.read_csv('artists.csv')
+artworks = pd.read_csv('artworks.csv')
+
+# Esempio di pulizia dati
+# Rimuovere record con campi essenziali mancanti
+artists.dropna(subset=['artistId', 'name'], inplace=True)
+artworks.dropna(subset=['artworkId', 'title', 'artistId'], inplace=True)
+
+# Correggere formattazione
+artists['name'] = artists['name'].str.strip()
+artworks['title'] = artworks['title'].str.strip()
+
+# Salvataggio dei dati puliti
+artists.to_csv('cleaned_artists.csv', index=False)
+artworks.to_csv('cleaned_artworks.csv', index=False)
+
+
+3. Creazione del database
+
+Crea un database MySQL per il progetto e importa i dati puliti.
+
+
+4. Sviluppo del backend in PHP
+
+Crea le pagine PHP per gestire le funzionalità richieste.
+    
+    - Connessione al database
+
+
+    - Ricerca di un artista
+Nel caso in cui nessun parametro venga specificato deve essere presentata la lista completa degli artisti;
+
+
+    - Visualizzazione delle opere di un artista
+eventualmente suddivise per tipologia e presentando un report generale sotto forma di tabella, su anni, tipologie, etc...;
+
+
+    -  Ricerca delle opere inserendo uno o più parametri (anche parziali) in forma libera o eventualmente guidata
+
+5. Calcolo delle statistiche
+    a) numero di opere realizzate in un determinato anno;
+    b) numero di artisti nati e/o morti in una determinata nazione;
+    c) numero di opere per artista;
+
+6. Creazione dell'interfaccia utente
+
+Utilizza HTML e CSS per creare le pagine web e il layout del sito.
+
+
+7. Testing
+Testing: Verifica che tutte le funzionalità funzionino correttamente.

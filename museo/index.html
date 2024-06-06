@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2.1.1/out/water.css">
+        <title>TATE - Home Page</title>
+        <style>
+            body { max-width: 1200px; }
+            /* style of navigation bar*/
+            .navbar {
+                background-color: #333;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .navbar-list {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-item {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            .navbar-link {
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                position: relative;
+            }
+
+            .navbar-link:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: rgb(160, 6, 127); /* Fluorescent color */
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out;
+            }
+
+            .navbar-link:hover:before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+
+            .content {
+            padding: 20px;
+            }
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .gallery img {
+                width: 200px;
+                margin: 10px;
+                border: 2px solid #ccc;
+            }
+            .event {
+                margin-top: 20px;
+                border-top: 2px solid #ccc;
+                padding-top: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>TATE - Home Page</h1>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a class="navbar-link" href="index.html"> Home </a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="artista.html">Artisti </a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="opera.php"> Opere </a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="statistica.html"> Statistiche </a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="visita.html">Visita</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <center><h2>BENVENUTO AL MUSEO TATE</h2></center>
+            <p>Esplora la nostra vasta collezione di opere d'arte, artefatti storici e molto altro ancora.</p>
+            <p>Scopri le nostre ultime esposizioni e partecipa ai nostri emozionanti eventi culturali.</p>
+            <p>Visita il nostro museo oggi stesso!</p>
+
+            <center><h3>GALLERIE</h3></center>
+            <div class="gallery">
+                <img src="https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/tate_britain_exterior_1_nuJ6H7o.width-1440.jpg" alt="Tate Britain" >
+                <img src="https://palazzoblu.it/wp-content/uploads/2023/05/permanente-600x600-1.jpg" alt="Tate Modern">
+                <img src="https://www.aise.it/public/file/varie24/7veneziano.jpg" alt="Tate St Ives"></a>
+            </div>
+
+            <center><h3>ESPLORA LE NOSTRE GALLERIE ONLINE</h3></center>
+            <div class="gallery">
+                <a href="https://www.tate.org.uk/visit/tate-modern/display/in-the-studio"><img src="https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/two_visitors_in_gallery_tate_modern_looking_a.width-1440_OSFC7gz.jpg" alt="Gallery"></a>
+                <a href="https://www.tate.org.uk/visit/tate-modern/display/media-networks"><img src="https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/_d818906_ret_media_networks_resized_2bCQuZG.width-1440.jpg" alt="Gallery Tech"></a>
+                <a href="https://www.tate.org.uk/visit/tate-modern/display/artist-and-society"><img src="https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Al_Qasim_2023_24.width-1440.jpg" alt="Gallery Fun"></a>
+            </div>
+
+            <div class="event"></center>
+                <h3>PROSSIMI EVENTI</h3>
+                <p>Scopri i nostri prossimi eventi culturali:</p>
+                <ul>
+                    <li>Conferenza sull'arte contemporanea - 25 Luglio</li>
+                    <li>Visita guidata alla mostra "Rinascimento Italiano" - 7 Agosto</li>
+                    <li>Workshop di pittura per bambini - 19 Agosto</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <address>
+                123 Main Street, Art-City, England<br>
+                Phone: 123-456-7890<br>
+            </address>
+            <p>"L'arte non riproduce ciò che è visibile, ma rende visibile ciò che non sempre lo è." - Paul Klee</p>
+            <p>&copy; 2024 Museo Tate. Tutti i diritti riservati.</p>
+        </footer>
+    </body>
+</html>
