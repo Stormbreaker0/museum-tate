@@ -65,16 +65,26 @@
             </nav>
         </header>
 
-        <h2>Cerca le Opere d'Arte</h2>
+        <h2>Scopri le Opere D'arte</h2>
         <form action="opera.php" method="POST">
-            <input type="text" name="titolo_opera" placeholder="Titolo dell'opera">
-            <input type="text" name="artista" placeholder="Nome artista">
-            <input type="text" name="numero_accessione" placeholder="Numero accessione">
-            <input type="text" name="anno" placeholder="Anno">
-            <input type="text" name="dimensioni" placeholder="dimensioni">
-            <input type="text" name="larghezza_min" placeholder="larghezza minimale">
-            <input type="text" name="altezza_min" placeholder="altezza minimale">
-            <input type="submit" value="Cerca">
+            <fieldset>
+				<label>Artista:</label>
+				<input type="text" name="nome_artista" placeholder="nome artista" autofocus >
+			</fieldset>
+
+            <fieldset>
+				<label>Titolo:</label>
+				<input type="text" name="nome_artista" autofocus >
+			</fieldset>
+            <fieldset>
+				<label>Tipo:</label>
+				<input type="text" name="genere" autofocus >
+			</fieldset>
+            <fieldset>
+				<label>Anno:</label>
+				<input type="text" name="anno_n" autofocus >
+			</fieldset>
+            <input type="submit" value="Search">
         </form>
 
         <footer>
